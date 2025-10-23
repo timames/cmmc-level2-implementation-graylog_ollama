@@ -641,7 +641,7 @@
     <div class="container">
         <div class="header">
             <h1>🛡️ CMMC Level 2 Compliance Architecture</h1>
-            <p class="header-subtitle">Graylog + NetFlow + VMware VDI + Microsoft Defender EDR + Azure AD + Defender + AIP + Purview + M365</p>
+            <p class="header-subtitle">Graylog + NetFlow + Omnissa VDI + Microsoft Defender EDR + Azure AD + Defender + AIP + Purview + M365</p>
             <p class="header-desc">Comprehensive security: Network + Endpoints + VDI + Identity + DLP monitoring</p>
             
             <div class="stats-grid">
@@ -857,7 +857,7 @@
                     <li><strong>Microsoft Defender EDR:</strong> Advanced endpoint threat detection, behavioral analytics, and automated response</li>
                     <li><strong>Microsoft Purview:</strong> DLP policies and information protection with automated CUI classification</li>
                     <li><strong>Azure AD + Conditional Access:</strong> Zero Trust identity controls with MFA and risk-based access</li>
-                    <li><strong>VMware Horizon VDI:</strong> Secure remote access with comprehensive session logging</li>
+                    <li><strong>Omnissa Horizon VDI:</strong> Secure remote access with comprehensive session logging</li>
                     <li><strong>NetFlow Analysis:</strong> Network traffic monitoring for lateral movement and data exfiltration</li>
                     <li><strong>Ollama AI:</strong> Local LLM for intelligent log analysis and threat correlation</li>
                 </ul>
@@ -910,8 +910,8 @@
                         <ul style="font-size: 0.875rem; line-height: 1.5;">
                             <li>Network (NetFlow from UDM-Pro)</li>
                             <li>Firewalls, Switches, APs (Syslog)</li>
-                            <li>VMware Horizon (VDI Sessions)</li>
-                            <li>VMware UAG (Remote Access)</li>
+                            <li>Omnissa Horizon (VDI Sessions)</li>
+                            <li>Omnissa UAG (Remote Access)</li>
                             <li>Microsoft Defender EDR (EDR/Endpoints)</li>
                             <li>Azure Active Directory (Identity)</li>
                             <li>Microsoft Defender (Endpoint, Office 365, Cloud Apps)</li>
@@ -1657,7 +1657,7 @@
                             <td>Perform information input validation</td>
                             <td>System & Info Integrity</td>
                             <td style="text-align: center;">✅</td>
-                            <td class="mono" style="font-size: 0.75rem;">VMware Horizon configs, NSA Horizon AI guidance, App security docs</td>
+                            <td class="mono" style="font-size: 0.75rem;">Omnissa Horizon configs, NSA Horizon AI guidance, App security docs</td>
                         </tr>
                         <tr class="practice-covered">
                             <td class="mono">SI.L2-3.14.9</td>
@@ -1732,7 +1732,7 @@
                     </tr>
                     <tr style="border-bottom: 1px solid #e5e7eb;">
                         <td style="padding: 1rem; font-weight: 600; color: #4b5563;">System Description:</td>
-                        <td style="padding: 1rem;">Hybrid environment providing secure processing of Controlled Unclassified Information (CUI) through VMware Horizon virtual desktop infrastructure, Microsoft 365 GCC High cloud services, and supporting on-premises infrastructure with comprehensive logging via Graylog SIEM.</td>
+                        <td style="padding: 1rem;">Hybrid environment providing secure processing of Controlled Unclassified Information (CUI) through Omnissa Horizon virtual desktop infrastructure, Microsoft 365 GCC High cloud services, and supporting on-premises infrastructure with comprehensive logging via Graylog SIEM.</td>
                     </tr>
                     <tr style="background: #f9fafb;">
                         <td style="padding: 1rem; font-weight: 600; color: #4b5563;">Date Prepared:</td>
@@ -1747,7 +1747,7 @@
                     <div>
                         <strong style="color: #92400e;">On-Premises Infrastructure:</strong>
                         <ul style="margin-left: 1.5rem; margin-top: 0.5rem; font-size: 0.875rem;">
-                            <li>VMware Horizon VDI Environment</li>
+                            <li>Omnissa Horizon VDI Environment</li>
                             <li>Active Directory Domain Controllers (2x)</li>
                             <li>File Server (FILE01)</li>
                             <li>Graylog SIEM (LOG01)</li>
@@ -1768,7 +1768,7 @@
                     <div>
                         <strong style="color: #92400e;">Security Infrastructure:</strong>
                         <ul style="margin-left: 1.5rem; margin-top: 0.5rem; font-size: 0.875rem;">
-                            <li>VMware Unified Access Gateway (UAG)</li>
+                            <li>Omnissa Unified Access Gateway (UAG)</li>
                             <li>Network Firewalls with NetFlow</li>
                             <li>802.1X Network Authentication</li>
                             <li>Graylog SIEM with 2-year retention</li>
@@ -1829,7 +1829,7 @@
                         <rect x="50" y="450" width="240" height="120" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
                         <text x="170" y="475" text-anchor="middle" style="font-size: 14px; font-weight: bold; fill: #1e40af;">VLAN 10 - VDI Users</text>
                         <text x="170" y="492" text-anchor="middle" style="font-size: 10px; fill: #1e40af;">X.Y.10.0/24</text>
-                        <text x="170" y="515" text-anchor="middle" style="font-size: 11px; fill: #1e3a8a;">VMware Horizon</text>
+                        <text x="170" y="515" text-anchor="middle" style="font-size: 11px; fill: #1e3a8a;">Omnissa Horizon</text>
                         <text x="170" y="532" text-anchor="middle" style="font-size: 10px; fill: #1e3a8a;">Virtual Desktops</text>
                         <text x="170" y="548" text-anchor="middle" style="font-size: 10px; fill: #1e3a8a;">User Workspaces</text>
                         <text x="170" y="563" text-anchor="middle" style="font-size: 9px; fill: #1e3a8a; font-weight: 600;">🔒 CUI Processing</text>
@@ -1937,7 +1937,7 @@
                             <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: 600;">VLAN 10</td>
                             <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-family: monospace;">X.Y.10.0/24</td>
                             <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">VDI User Desktops</td>
-                            <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">VMware Horizon VMs, User Sessions</td>
+                            <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Omnissa Horizon VMs, User Sessions</td>
                             <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><span style="background: #10b981; color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.75rem;">CUI Processing</span></td>
                         </tr>
                         <tr style="background: #dcfce7;">
@@ -2256,7 +2256,7 @@
                     This System Security Plan documents CMMC Level 2 implementation within a hybrid environment:
                 </p>
                 <ul style="font-size: 0.875rem; margin-left: 2rem; color: #1f2937; line-height: 1.8;">
-                    <li><strong>On-Premises:</strong> VMware Horizon VDI (VLAN 10), Domain Controllers (VLAN 20), File Server (VLAN 30), Gateway/Firewall (Internet Connected), DMZ (VLAN 44)</li>
+                    <li><strong>On-Premises:</strong> Omnissa Horizon VDI (VLAN 10), Domain Controllers (VLAN 20), File Server (VLAN 30), Gateway/Firewall (Internet Connected), DMZ (VLAN 44)</li>
                     <li><strong>Cloud:</strong> Microsoft 365 GCC High with Azure AD, Microsoft Defender for Endpoint, Microsoft Purview DLP</li>
                     <li><strong>Logging:</strong> Graylog SIEM with NetFlow, Syslog, Windows Event Forwarding, Azure Log Analytics</li>
                     <li><strong>Network:</strong> VLAN segmentation, DMZ isolation, firewall rules, NetFlow monitoring, 802.1X authentication</li>
@@ -2287,7 +2287,7 @@
                 </div>
                 <div class="implementation ">
                     <div class="implementation-title">Implementation Details:</div>
-                    Active Directory integration with VDI environment ensures all users are authenticated before accessing CUI. VMware Horizon tracks all user sessions and automated processes. Azure AD logs capture all authentication attempts. Network devices use 802.1X for device authentication. Account creation requires documented approval and accounts are reviewed quarterly. All system access is logged and monitored through Graylog SIEM.
+                    Active Directory integration with VDI environment ensures all users are authenticated before accessing CUI. Omnissa Horizon tracks all user sessions and automated processes. Azure AD logs capture all authentication attempts. Network devices use 802.1X for device authentication. Account creation requires documented approval and accounts are reviewed quarterly. All system access is logged and monitored through Graylog SIEM.
                 </div>
                 <div class="log-sources">
                     <strong>Evidence Sources:</strong> VDI, AAD, Windows, Syslog
@@ -2309,7 +2309,7 @@
                 </div>
                 <div class="implementation ">
                     <div class="implementation-title">Implementation Details:</div>
-                    VDI session timeout configured for 30 minutes of inactivity. VMware Horizon automatically terminates idle sessions. Azure AD session lifetime policies enforce maximum session duration. Conditional access policies terminate sessions based on risk. Session termination events logged to Graylog.
+                    VDI session timeout configured for 30 minutes of inactivity. Omnissa Horizon automatically terminates idle sessions. Azure AD session lifetime policies enforce maximum session duration. Conditional access policies terminate sessions based on risk. Session termination events logged to Graylog.
                 </div>
                 <div class="log-sources">
                     <strong>Evidence Sources:</strong> VDI, AAD, Windows
@@ -2333,7 +2333,7 @@
                 </div>
                 <div class="implementation ">
                     <div class="implementation-title">Implementation Details:</div>
-                    VMware Unified Access Gateway (UAG) provides single entry point for remote access. All remote sessions proxied through UAG with session monitoring. NetFlow tracks all remote access connections. UAG logs capture session start/stop, data transfer, and client details. Graylog dashboards visualize remote access patterns and anomalies.
+                    Omnissa Unified Access Gateway (UAG) provides single entry point for remote access. All remote sessions proxied through UAG with session monitoring. NetFlow tracks all remote access connections. UAG logs capture session start/stop, data transfer, and client details. Graylog dashboards visualize remote access patterns and anomalies.
                 </div>
                 <div class="log-sources">
                     <strong>Evidence Sources:</strong> VDI, UAG, NetFlow
@@ -2355,7 +2355,7 @@
                 </div>
                 <div class="implementation ">
                     <div class="implementation-title">Implementation Details:</div>
-                    UAG enforces TLS 1.2+ for all remote access sessions. Azure AD uses TLS for authentication. VDI traffic encrypted with AES-256 via VMware Blast protocol. All cryptographic settings logged in syslog.
+                    UAG enforces TLS 1.2+ for all remote access sessions. Azure AD uses TLS for authentication. VDI traffic encrypted with AES-256 via Omnissa Blast protocol. All cryptographic settings logged in syslog.
                 </div>
                 <div class="log-sources">
                     <strong>Evidence Sources:</strong> UAG, Syslog
@@ -2446,7 +2446,7 @@
                 </div>
                 <div class="implementation ">
                     <div class="implementation-title">Implementation Details:</div>
-                    VMware Horizon VDI logging configured. All events retained for 2+ years per CMMC requirements.
+                    Omnissa Horizon VDI logging configured. All events retained for 2+ years per CMMC requirements.
                 </div>
                 <div class="log-sources">
                     <strong>Evidence Sources:</strong> VDI, UAG
@@ -2468,7 +2468,7 @@
                 </div>
                 <div class="implementation ">
                     <div class="implementation-title">Implementation Details:</div>
-                    VMware Horizon VDI logging configured. Network flow monitoring via Graylog NetFlow. All events retained for 2+ years per CMMC requirements.
+                    Omnissa Horizon VDI logging configured. Network flow monitoring via Graylog NetFlow. All events retained for 2+ years per CMMC requirements.
                 </div>
                 <div class="log-sources">
                     <strong>Evidence Sources:</strong> NetFlow, VDI
@@ -2514,7 +2514,7 @@
                 </div>
                 <div class="implementation ">
                     <div class="implementation-title">Implementation Details:</div>
-                    VMware Horizon VDI logging configured. All events retained for 2+ years per CMMC requirements.
+                    Omnissa Horizon VDI logging configured. All events retained for 2+ years per CMMC requirements.
                 </div>
                 <div class="log-sources">
                     <strong>Evidence Sources:</strong> VDI (USB events)
@@ -2537,7 +2537,7 @@
                 </div>
                 <div class="implementation ">
                     <div class="implementation-title">Implementation Details:</div>
-                    VMware Horizon VDI logging configured. All events retained for 2+ years per CMMC requirements.
+                    Omnissa Horizon VDI logging configured. All events retained for 2+ years per CMMC requirements.
                 </div>
                 <div class="log-sources">
                     <strong>Evidence Sources:</strong> VDI (USB events)
@@ -3226,7 +3226,7 @@
                 </div>
                 <div class="implementation ">
                     <div class="implementation-title">Implementation Details:</div>
-                    VMware Horizon VDI logging configured. Azure Active Directory authentication and audit logs. Windows Event Logs collected centrally. All events retained for 2+ years per CMMC requirements.
+                    Omnissa Horizon VDI logging configured. Azure Active Directory authentication and audit logs. Windows Event Logs collected centrally. All events retained for 2+ years per CMMC requirements.
                 </div>
                 <div class="log-sources">
                     <strong>Evidence Sources:</strong> AAD, VDI, Windows, Syslog
@@ -3248,7 +3248,7 @@
                 </div>
                 <div class="implementation ">
                     <div class="implementation-title">Implementation Details:</div>
-                    VMware Horizon VDI logging configured. All events retained for 2+ years per CMMC requirements.
+                    Omnissa Horizon VDI logging configured. All events retained for 2+ years per CMMC requirements.
                 </div>
                 <div class="log-sources">
                     <strong>Evidence Sources:</strong> VDI, UAG logs
@@ -3291,7 +3291,7 @@
                 </div>
                 <div class="implementation ">
                     <div class="implementation-title">Implementation Details:</div>
-                    VMware Horizon VDI logging configured. Azure Active Directory authentication and audit logs. Windows Event Logs collected centrally. All events retained for 2+ years per CMMC requirements.
+                    Omnissa Horizon VDI logging configured. Azure Active Directory authentication and audit logs. Windows Event Logs collected centrally. All events retained for 2+ years per CMMC requirements.
                 </div>
                 <div class="log-sources">
                     <strong>Evidence Sources:</strong> AAD, VDI, Windows, Syslog
@@ -3446,7 +3446,7 @@
                 </div>
                 <div class="implementation ">
                     <div class="implementation-title">Implementation Details:</div>
-                    VMware Horizon VDI logging configured. Azure Active Directory authentication and audit logs. All events retained for 2+ years per CMMC requirements.
+                    Omnissa Horizon VDI logging configured. Azure Active Directory authentication and audit logs. All events retained for 2+ years per CMMC requirements.
                 </div>
                 <div class="log-sources">
                     <strong>Evidence Sources:</strong> VDI, AAD
@@ -3926,7 +3926,7 @@
                 </div>
                 <div class="implementation ">
                     <div class="implementation-title">Implementation Details:</div>
-                    This document serves as the System Security Plan (SSP) for the CUI processing environment. The SSP describes the system boundary encompassing the VMware Horizon VDI environment, Microsoft 365 GCC High tenant, on-premises infrastructure, and supporting security systems. System architecture and environment of operation are documented including network segmentation, access controls, and data flows. Security requirements mapped to CMMC Level 2 practices with implementation details for each control. SSP development follows NSA Horizon AI guidance for DIB cybersecurity. Reference: NSA Cybersecurity Collaboration Center - DIB Cybersecurity Services (https://www.nsa.gov/About/Cybersecurity-Collaboration-Center/DIB-Cybersecurity-Services/). SSP reviewed and updated annually and upon significant system changes.
+                    This document serves as the System Security Plan (SSP) for the CUI processing environment. The SSP describes the system boundary encompassing the Omnissa Horizon VDI environment, Microsoft 365 GCC High tenant, on-premises infrastructure, and supporting security systems. System architecture and environment of operation are documented including network segmentation, access controls, and data flows. Security requirements mapped to CMMC Level 2 practices with implementation details for each control. SSP development follows NSA Horizon AI guidance for DIB cybersecurity. Reference: NSA Cybersecurity Collaboration Center - DIB Cybersecurity Services (https://www.nsa.gov/About/Cybersecurity-Collaboration-Center/DIB-Cybersecurity-Services/). SSP reviewed and updated annually and upon significant system changes.
                 </div>
                 <div class="log-sources">
                     <strong>Evidence Sources:</strong> This System Security Plan (SSP), NSA Horizon AI guidance, Network diagrams, System inventory
@@ -4080,7 +4080,7 @@
                 </div>
                 <div class="implementation ">
                     <div class="implementation-title">Implementation Details:</div>
-                    VMware Horizon VDI logging configured. All events retained for 2+ years per CMMC requirements.
+                    Omnissa Horizon VDI logging configured. All events retained for 2+ years per CMMC requirements.
                 </div>
                 <div class="log-sources">
                     <strong>Evidence Sources:</strong> VDI monitoring
@@ -4123,7 +4123,7 @@
                 </div>
                 <div class="implementation ">
                     <div class="implementation-title">Implementation Details:</div>
-                    Network segregation implemented using VLANs to separate user workspaces from system management functions. Dedicated management network established for administrative access to infrastructure components including Active Directory domain controllers, VMware vCenter, ESXi hosts, and security appliances. User VDI sessions operate on separate network segments from management interfaces. Administrative functions require privileged credentials and access through the management network only. All management traffic is logged and monitored separately.
+                    Network segregation implemented using VLANs to separate user workspaces from system management functions. Dedicated management network established for administrative access to infrastructure components including Active Directory domain controllers, Omnissa vCenter, ESXi hosts, and security appliances. User VDI sessions operate on separate network segments from management interfaces. Administrative functions require privileged credentials and access through the management network only. All management traffic is logged and monitored separately.
                 </div>
                 <div class="log-sources">
                     <strong>Evidence Sources:</strong> Network diagrams, VLAN configs, Firewall rules, AD Group Policy
@@ -4146,7 +4146,7 @@
                 </div>
                 <div class="implementation ">
                     <div class="implementation-title">Implementation Details:</div>
-                    VMware Unified Access Gateway (UAG) provides secure external access to the VDI environment using FIPS 140-2 validated cryptographic modules. All external traffic is routed through port 443 (HTTPS) only, ensuring encryption in transit. UAG is deployed in a DMZ and provides logical separation between publicly accessible components and internal CUI networks. No direct network connections exist between public-facing systems and internal CUI processing systems.
+                    Omnissa Unified Access Gateway (UAG) provides secure external access to the VDI environment using FIPS 140-2 validated cryptographic modules. All external traffic is routed through port 443 (HTTPS) only, ensuring encryption in transit. UAG is deployed in a DMZ and provides logical separation between publicly accessible components and internal CUI networks. No direct network connections exist between public-facing systems and internal CUI processing systems.
                 </div>
                 <div class="log-sources">
                     <strong>Evidence Sources:</strong> UAG config, Firewall rules, FIPS validation certificates
@@ -4190,7 +4190,7 @@
                 </div>
                 <div class="implementation ">
                     <div class="implementation-title">Implementation Details:</div>
-                    All CUI transmission is encrypted using FIPS 140-2 validated cryptographic modules. VMware Unified Access Gateway (UAG) enforces TLS 1.2 or higher for all remote access sessions to the VDI environment. Microsoft 365 GCC High implements TLS 1.2+ for all email and file transmission. Internal network traffic between CUI systems uses encryption for sensitive data transfers. VPN connections require FIPS-validated IPsec or TLS encryption. All web-based applications serving CUI enforce HTTPS with strong cipher suites. Unencrypted protocols (HTTP, FTP, Telnet) are disabled on all systems processing CUI.
+                    All CUI transmission is encrypted using FIPS 140-2 validated cryptographic modules. Omnissa Unified Access Gateway (UAG) enforces TLS 1.2 or higher for all remote access sessions to the VDI environment. Microsoft 365 GCC High implements TLS 1.2+ for all email and file transmission. Internal network traffic between CUI systems uses encryption for sensitive data transfers. VPN connections require FIPS-validated IPsec or TLS encryption. All web-based applications serving CUI enforce HTTPS with strong cipher suites. Unencrypted protocols (HTTP, FTP, Telnet) are disabled on all systems processing CUI.
                 </div>
                 <div class="log-sources">
                     <strong>Evidence Sources:</strong> UAG TLS configuration, O365 GCC High TLS logs, VPN configs, Network traffic analysis, FIPS validation certificates
@@ -4285,7 +4285,7 @@
                 </div>
                 <div class="implementation ">
                     <div class="implementation-title">Implementation Details:</div>
-                    VMware Horizon VDI logging configured. Microsoft Defender for Endpoint behavioral monitoring. All events retained for 2+ years per CMMC requirements.
+                    Omnissa Horizon VDI logging configured. Microsoft Defender for Endpoint behavioral monitoring. All events retained for 2+ years per CMMC requirements.
                 </div>
                 <div class="log-sources">
                     <strong>Evidence Sources:</strong> Microsoft Defender EDR, VDI
@@ -4307,7 +4307,7 @@
                 </div>
                 <div class="implementation ">
                     <div class="implementation-title">Implementation Details:</div>
-                    VMware Horizon VDI logging configured. Microsoft Defender for Endpoint behavioral monitoring. All events retained for 2+ years per CMMC requirements.
+                    Omnissa Horizon VDI logging configured. Microsoft Defender for Endpoint behavioral monitoring. All events retained for 2+ years per CMMC requirements.
                 </div>
                 <div class="log-sources">
                     <strong>Evidence Sources:</strong> Microsoft Defender EDR, VDI
@@ -4375,10 +4375,10 @@
                 </div>
                 <div class="implementation ">
                     <div class="implementation-title">Implementation Details:</div>
-                    Input validation implemented following NSA's Horizon AI cybersecurity guidance for Defense Industrial Base (DIB) organizations. VMware Horizon environment configured with input validation controls at the VDI gateway level. Session validation ensures only properly authenticated connections are established. Application-level input validation implemented through secure development practices for custom applications accessing CUI. Reference: NSA Cybersecurity Collaboration Center - DIB Cybersecurity Services (https://www.nsa.gov/About/Cybersecurity-Collaboration-Center/DIB-Cybersecurity-Services/).
+                    Input validation implemented following NSA's Horizon AI cybersecurity guidance for Defense Industrial Base (DIB) organizations. Omnissa Horizon environment configured with input validation controls at the VDI gateway level. Session validation ensures only properly authenticated connections are established. Application-level input validation implemented through secure development practices for custom applications accessing CUI. Reference: NSA Cybersecurity Collaboration Center - DIB Cybersecurity Services (https://www.nsa.gov/About/Cybersecurity-Collaboration-Center/DIB-Cybersecurity-Services/).
                 </div>
                 <div class="log-sources">
-                    <strong>Evidence Sources:</strong> VMware Horizon configs, NSA Horizon AI guidance implementation, Application security documentation
+                    <strong>Evidence Sources:</strong> Omnissa Horizon configs, NSA Horizon AI guidance implementation, Application security documentation
                 </div>
             </div>
 
@@ -4468,7 +4468,7 @@
                         <rect x="50" y="450" width="240" height="120" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
                         <text x="170" y="475" text-anchor="middle" style="font-size: 14px; font-weight: bold; fill: #1e40af;">VLAN 10 - VDI Users</text>
                         <text x="170" y="492" text-anchor="middle" style="font-size: 10px; fill: #1e40af;">X.Y.10.0/24</text>
-                        <text x="170" y="515" text-anchor="middle" style="font-size: 11px; fill: #1e3a8a;">VMware Horizon</text>
+                        <text x="170" y="515" text-anchor="middle" style="font-size: 11px; fill: #1e3a8a;">Omnissa Horizon</text>
                         <text x="170" y="532" text-anchor="middle" style="font-size: 10px; fill: #1e3a8a;">Virtual Desktops</text>
                         <text x="170" y="548" text-anchor="middle" style="font-size: 10px; fill: #1e3a8a;">User Workspaces</text>
                         <text x="170" y="563" text-anchor="middle" style="font-size: 9px; fill: #1e3a8a; font-weight: 600;">🔒 CUI Processing</text>
@@ -4576,7 +4576,7 @@
                             <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: 600;">VLAN 10</td>
                             <td style="padding: 0.75rem; border: 1px solid #e5e7eb; font-family: monospace;">X.Y.10.0/24</td>
                             <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">VDI User Desktops</td>
-                            <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">VMware Horizon VMs, User Sessions</td>
+                            <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Omnissa Horizon VMs, User Sessions</td>
                             <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><span style="background: #10b981; color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.75rem;">CUI Processing</span></td>
                         </tr>
                         <tr style="background: #dcfce7;">
@@ -4856,13 +4856,13 @@
             <div class="step-card">
                 <div class="step-header">
                     <div class="step-number">2</div>
-                    <div class="step-title">Configure UDM-Pro NetFlow + VMware VDI Logging</div>
+                    <div class="step-title">Configure UDM-Pro NetFlow + Omnissa VDI Logging</div>
                 </div>
                 <ul class="step-list">
                     <li>UniFi Console > Settings > System > Advanced > NetFlow</li>
                     <li>Enable NetFlow v9, Collector: [Graylog IP], Port: 2055</li>
-                    <li>Configure VMware Horizon Connection Server syslog</li>
-                    <li>Configure VMware UAG (Unified Access Gateway) logs</li>
+                    <li>Configure Omnissa Horizon Connection Server syslog</li>
+                    <li>Configure Omnissa UAG (Unified Access Gateway) logs</li>
                     <li>Expected VDI data: 5-15 GB/day for 100-500 users</li>
                 </ul>
             </div>
@@ -5383,7 +5383,7 @@
 
         <div id="vdi" class="tab-content">
             <div class="info-box info-blue">
-                <h3 style="font-weight: bold; margin-bottom: 0.5rem;">VMware Horizon + UAG Logs</h3>
+                <h3 style="font-weight: bold; margin-bottom: 0.5rem;">Omnissa Horizon + UAG Logs</h3>
             </div>
 
             <div class="info-box info-red" style="margin-bottom: 1.5rem;">
@@ -5408,8 +5408,8 @@
                         </li>
                         <li><strong>Horizon Client FIPS:</strong> Deploy clients with FIPS mode enabled
                             <ul style="margin-left: 1rem; font-size: 0.8125rem; margin-top: 0.25rem;">
-                                <li>Windows Client: Registry key HKLM\Software\VMware, Inc.\VMware VDM\Client\Security\FipsEnabled = 1</li>
-                                <li>Or install client with: VMware-Horizon-Client-x.x.x-xxxxx.exe /install /silent /norestart FIPS_ENABLED=1</li>
+                                <li>Windows Client: Registry key HKLM\Software\Omnissa, Inc.\Omnissa VDM\Client\Security\FipsEnabled = 1</li>
+                                <li>Or install client with: Omnissa-Horizon-Client-x.x.x-xxxxx.exe /install /silent /norestart FIPS_ENABLED=1</li>
                                 <li>macOS/Linux clients: Enable in client preferences or config file</li>
                             </ul>
                         </li>
@@ -5551,7 +5551,7 @@
                 </div>
                 <ul class="step-list">
                     <li>Create GPO or set registry: HKLM\System\CurrentControlSet\Control\Lsa\FIPSAlgorithmPolicy\Enabled = 1</li>
-                    <li>Apply to all Connection Servers and restart VMware Horizon Services</li>
+                    <li>Apply to all Connection Servers and restart Omnissa Horizon Services</li>
                     <li>Verify FIPS mode in Event Viewer (Security log for FIPS algorithm policy changes)</li>
                     <li>Test broker functionality and desktop launches</li>
                 </ul>
@@ -5563,10 +5563,10 @@
                     <div class="step-title">Deploy Horizon Clients with FIPS Enabled</div>
                 </div>
                 <ul class="step-list">
-                    <li>Deploy Windows clients with: VMware-Horizon-Client-x.x.x.exe /install /silent FIPS_ENABLED=1</li>
-                    <li>For existing clients, set registry: HKLM\Software\VMware, Inc.\VMware VDM\Client\Security\FipsEnabled = 1</li>
+                    <li>Deploy Windows clients with: Omnissa-Horizon-Client-x.x.x.exe /install /silent FIPS_ENABLED=1</li>
+                    <li>For existing clients, set registry: HKLM\Software\Omnissa, Inc.\Omnissa VDM\Client\Security\FipsEnabled = 1</li>
                     <li>Configure macOS/Linux clients via preferences or config files</li>
-                    <li>Verify client FIPS status in client logs (C:\Users\USERNAME\AppData\Local\Temp\vmware-USERNAME\)</li>
+                    <li>Verify client FIPS status in client logs (C:\Users\USERNAME\AppData\Local\Temp\Omnissa-USERNAME\)</li>
                 </ul>
             </div>
 
@@ -5578,7 +5578,7 @@
                 <ul class="step-list">
                     <li>Disable TLS 1.0/1.1 via registry on Connection Servers and UAG</li>
                     <li>Configure cipher suite order in UAG appliance settings</li>
-                    <li>Update Connection Server TLS settings via VMware admin tools</li>
+                    <li>Update Connection Server TLS settings via Omnissa admin tools</li>
                     <li>Test with SSL Labs or similar scanner to verify TLS configuration</li>
                 </ul>
             </div>
@@ -5603,7 +5603,7 @@
                     <div class="step-title">Configure Syslog Forwarding to Graylog</div>
                 </div>
                 <ul class="step-list">
-                    <li>Configure Connection Server syslog: VMware Horizon Administrator → Events → Event Configuration → Enable syslog</li>
+                    <li>Configure Connection Server syslog: Omnissa Horizon Administrator → Events → Event Configuration → Enable syslog</li>
                     <li>Configure UAG syslog: Admin UI → Settings → Syslog → Add Graylog server IP/port</li>
                     <li>Enable verbose logging for authentication, session, and policy events</li>
                     <li>Create Graylog inputs for UDP/TCP syslog on port 514 or 1514</li>
@@ -7016,12 +7016,12 @@ curl -X POST http://localhost:5000/cmmc/report \
                 </div>
             </div>
 
-            <h3 style="font-size: 1.25rem; font-weight: bold; margin: 2rem 0 1rem;">🖥️ VMware Horizon Agent Policies (for VDI Instant Clones)</h3>
+            <h3 style="font-size: 1.25rem; font-weight: bold; margin: 2rem 0 1rem;">🖥️ Omnissa Horizon Agent Policies (for VDI Instant Clones)</h3>
 
             <div class="info-box info-blue" style="margin-bottom: 1rem;">
                 <p style="font-size: 0.875rem;">
                     Configure Horizon Agent policies via Group Policy (ADM templates) or directly in Horizon Administrator. 
-                    ADM templates: Download from VMware and import to Group Policy Management Console under Computer Configuration → Policies → Administrative Templates → VMware Horizon Agent Configuration
+                    ADM templates: Download from Omnissa and import to Group Policy Management Console under Computer Configuration → Policies → Administrative Templates → Omnissa Horizon Agent Configuration
                 </p>
             </div>
 
@@ -7030,7 +7030,7 @@ curl -X POST http://localhost:5000/cmmc/report \
                     <h4 style="color: #991b1b;">Screenshot Prevention (CUI Protection)</h4>
                     <p style="font-size: 0.875rem; margin-bottom: 0.5rem; font-weight: 600;">CMMC: AC.L2-3.1.23, SI.L2-3.14.9</p>
                     <ul style="font-size: 0.875rem;">
-                        <li><strong>Policy Path:</strong> VMware Horizon Agent Configuration → Agent Security</li>
+                        <li><strong>Policy Path:</strong> Omnissa Horizon Agent Configuration → Agent Security</li>
                         <li><strong>Setting:</strong> "Enable Screenshot Prevention" = Enabled</li>
                         <li><strong>Effect:</strong> Blocks screen capture via Print Screen key, Snipping Tool, and most third-party tools</li>
                         <li><strong>Alternative:</strong> Use Blast protocol watermarking to track screenshots if taken</li>
@@ -7042,7 +7042,7 @@ curl -X POST http://localhost:5000/cmmc/report \
                     <h4 style="color: #92400e;">Client Drive Redirection (CDR)</h4>
                     <p style="font-size: 0.875rem; margin-bottom: 0.5rem; font-weight: 600;">CMMC: AC.L2-3.1.20, AC.L2-3.1.21</p>
                     <ul style="font-size: 0.875rem;">
-                        <li><strong>Policy Path:</strong> VMware Horizon Agent Configuration → Client Drive Redirection</li>
+                        <li><strong>Policy Path:</strong> Omnissa Horizon Agent Configuration → Client Drive Redirection</li>
                         <li><strong>Recommended Setting:</strong> "Enable Client Drive Redirection" = Disabled (for CUI environments)</li>
                         <li><strong>Alternative (if needed):</strong> Enable with "Read-Only" access:
                             <ul style="margin-left: 1rem; font-size: 0.8125rem;">
@@ -7060,7 +7060,7 @@ curl -X POST http://localhost:5000/cmmc/report \
                     <h4 style="color: #1e40af;">USB Device Redirection</h4>
                     <p style="font-size: 0.875rem; margin-bottom: 0.5rem; font-weight: 600;">CMMC: AC.L2-3.1.20, AC.L2-3.1.21, AU.L2-3.3.1</p>
                     <ul style="font-size: 0.875rem;">
-                        <li><strong>Policy Path:</strong> VMware Horizon Agent Configuration → USB Configuration</li>
+                        <li><strong>Policy Path:</strong> Omnissa Horizon Agent Configuration → USB Configuration</li>
                         <li><strong>Base Policy:</strong> "Allow USB Access" = Disabled by default</li>
                         <li><strong>Exceptions - Allowlist Approach:</strong>
                             <ul style="margin-left: 1rem; font-size: 0.8125rem;">
@@ -7090,7 +7090,7 @@ curl -X POST http://localhost:5000/cmmc/report \
                     <h4 style="color: #065f46;">Printing Policies</h4>
                     <p style="font-size: 0.875rem; margin-bottom: 0.5rem; font-weight: 600;">CMMC: SI.L2-3.14.9, AU.L2-3.3.1</p>
                     <ul style="font-size: 0.875rem;">
-                        <li><strong>Policy Path:</strong> VMware Horizon Agent Configuration → Printing</li>
+                        <li><strong>Policy Path:</strong> Omnissa Horizon Agent Configuration → Printing</li>
                         <li><strong>Base Setting:</strong> "Enable Printer Redirection" = Enabled (with restrictions)</li>
                         <li><strong>Printer Allowlist:</strong>
                             <ul style="margin-left: 1rem; font-size: 0.8125rem;">
@@ -7126,7 +7126,7 @@ curl -X POST http://localhost:5000/cmmc/report \
                     <h4 style="color: #6b21a8;">Clipboard & Copy/Paste</h4>
                     <p style="font-size: 0.875rem; margin-bottom: 0.5rem; font-weight: 600;">CMMC: AC.L2-3.1.23</p>
                     <ul style="font-size: 0.875rem;">
-                        <li><strong>Policy Path:</strong> VMware Horizon Agent Configuration → Clipboard Redirection</li>
+                        <li><strong>Policy Path:</strong> Omnissa Horizon Agent Configuration → Clipboard Redirection</li>
                         <li><strong>Recommended for CUI:</strong>
                             <ul style="margin-left: 1rem; font-size: 0.8125rem;">
                                 <li>"Enable Copy/Paste" = Disabled (most secure)</li>
@@ -7162,10 +7162,10 @@ curl -X POST http://localhost:5000/cmmc/report \
                 <ul class="bullet-list" style="font-size: 0.875rem;">
                     <li><strong>Method 1 - Active Directory GPO (Recommended):</strong>
                         <ul style="margin-left: 1rem; font-size: 0.8125rem;">
-                            <li>Download VMware Horizon Agent ADM/ADMX templates from VMware Product Downloads</li>
+                            <li>Download Omnissa Horizon Agent ADM/ADMX templates from Omnissa Product Downloads</li>
                             <li>Import templates to Group Policy Management Console (GPMC)</li>
                             <li>Create GPO targeting VDI instant clone OU</li>
-                            <li>Configure policies under Computer Configuration → Administrative Templates → VMware Horizon Agent Configuration</li>
+                            <li>Configure policies under Computer Configuration → Administrative Templates → Omnissa Horizon Agent Configuration</li>
                         </ul>
                     </li>
                     <li><strong>Method 2 - Horizon Administrator UI:</strong>
@@ -7179,7 +7179,7 @@ curl -X POST http://localhost:5000/cmmc/report \
                     <li><strong>Method 3 - Registry (Manual/Script):</strong>
                         <ul style="margin-left: 1rem; font-size: 0.8125rem;">
                             <li>Apply registry settings to master image before snapshot</li>
-                            <li>Registry path: HKLM\Software\VMware, Inc.\VMware VDM\Agent\Configuration</li>
+                            <li>Registry path: HKLM\Software\Omnissa, Inc.\Omnissa VDM\Agent\Configuration</li>
                             <li>Less manageable but useful for quick testing</li>
                         </ul>
                     </li>
@@ -7325,9 +7325,9 @@ curl -X POST http://localhost:5000/cmmc/report \
                 </div>
 
                 <div class="feature-box" style="background: #faf5ff; border: 2px solid #9333ea;">
-                    <h4 style="color: #6b21a8; margin-bottom: 0.75rem;">4️⃣ VMware-Horizon-CMMC-Hardening.ps1</h4>
+                    <h4 style="color: #6b21a8; margin-bottom: 0.75rem;">4️⃣ Omnissa-Horizon-CMMC-Hardening.ps1</h4>
                     <p style="font-size: 0.875rem; margin-bottom: 0.75rem; color: #374151;">
-                        VMware Horizon Agent policy configuration with ADM template deployment.
+                        Omnissa Horizon Agent policy configuration with ADM template deployment.
                     </p>
                     <ul style="font-size: 0.8125rem; line-height: 1.8;">
                         <li>✅ USB redirection controls (disabled for CMMC)</li>
@@ -7338,7 +7338,7 @@ curl -X POST http://localhost:5000/cmmc/report \
                         <li>✅ Defender for Endpoint integration</li>
                     </ul>
                     <div style="background: #1f2937; color: #f9fafb; padding: 0.75rem; border-radius: 0.25rem; margin-top: 0.75rem; font-family: monospace; font-size: 0.75rem; overflow-x: auto;">
-.\VMware-Horizon-CMMC-Hardening.ps1 `
+.\Omnissa-Horizon-CMMC-Hardening.ps1 `
   -TargetOU "OU=VDI-Clones,DC=domain,DC=com" `
   -HorizonADMPath "C:\Horizon_ADM" `
   -DeployADMTemplates
@@ -7506,7 +7506,7 @@ sudo sysctl -a | grep -E "net.ipv4|kernel"</div>
                     <li><strong>Plan Maintenance Windows:</strong> Some changes require system reboots and service restarts</li>
                     <li><strong>VDI Instant Clone Considerations:</strong> Use -IsVDIInstantClone flag to skip BitLocker/Credential Guard</li>
                     <li><strong>SSH Key Distribution:</strong> For Linux, distribute SSH keys before disabling password authentication</li>
-                    <li><strong>Horizon ADM Templates:</strong> Download from VMware before running Horizon hardening script</li>
+                    <li><strong>Horizon ADM Templates:</strong> Download from Omnissa before running Horizon hardening script</li>
                     <li><strong>Domain Admin Rights Required:</strong> Windows scripts must run with Domain Admin privileges on a DC</li>
                 </ol>
             </div>
@@ -7606,7 +7606,7 @@ sudo sysctl -a | grep -E "net.ipv4|kernel"</div>
                             <li>✅ Master-CMMC-GPO-Hardening.ps1 (17 KB)</li>
                             <li>✅ Windows-Server-2025-CMMC-Hardening.ps1 (16 KB)</li>
                             <li>✅ Windows-11-CMMC-Hardening.ps1 (16 KB)</li>
-                            <li>✅ VMware-Horizon-CMMC-Hardening.ps1 (19 KB)</li>
+                            <li>✅ Omnissa-Horizon-CMMC-Hardening.ps1 (19 KB)</li>
                             <li>✅ Linux-CMMC-Hardening.sh (32 KB)</li>
                             <li>✅ README.md (16 KB) - Complete documentation</li>
                             <li>✅ QUICKSTART.md (4 KB) - Quick reference</li>
