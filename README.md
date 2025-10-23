@@ -1,5 +1,15 @@
 # CMMC Level 2 Solution Architecture & Implementation Guide
 
+---
+
+## 📘 View the Complete Implementation Guide
+
+**[🚀 Open Implementation Guide Online](https://timames.github.io/cmmc-level2-implementation-graylog_ollama/CMMC_Implementation_Guide.html)** ← Click here to view the full documentation
+
+The guide includes detailed network architecture, all 110 CMMC practices, implementation roadmap, and assessment preparation guidance.
+
+---
+
 A comprehensive, production-ready reference architecture and implementation guide for achieving CMMC Level 2 compliance. This project provides detailed network topology, system design patterns, security controls mapping, and a complete implementation roadmap for defense contractors handling Controlled Unclassified Information (CUI).
 
 **Built on proven Graylog SIEM and Ollama AI technologies** with complete architectural documentation, plus optional automation scripts to accelerate deployment.
