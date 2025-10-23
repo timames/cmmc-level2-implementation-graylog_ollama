@@ -1,0 +1,79 @@
+# Credentials and Secrets
+*.key
+*.pem
+*.pfx
+*.p12
+*.crt
+*.cer
+secrets.txt
+credentials.txt
+passwords.txt
+.env
+.env.local
+
+# Configuration files with sensitive data
+*config.local*
+*secrets.yaml
+*secrets.yml
+*secrets.json
+
+# Log files
+*.log
+logs/
+*.log.*
+
+# Backup files
+*.bak
+*.backup
+*.old
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Ansible
+*.retry
+.vault_pass
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Generated documentation
+site/
+
+# Evidence and sensitive documentation
+evidence/
+assessment-data/
+cui-samples/

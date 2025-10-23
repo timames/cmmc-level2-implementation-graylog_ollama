@@ -1,0 +1,24 @@
+.
+|____.github
+| |____ISSUE_TEMPLATE
+| | |____bug_report.md
+| | |____feature_request.md
+| |____pull_request_template.md
+|____.gitignore
+|____CONTRIBUTING.md
+|____LICENSE
+|____QUICKSTART.md
+|____README.md
+|____STRUCTURE.txt
+|____docs
+| |____CMMC_Complete_Updated_No_VLAN40.html
+|____scripts
+| |____README.md
+| |____compliance
+| |____graylog
+| |____monitoring
+| |____network
+| |____ollama
+| |____system-hardening
+| |____utilities
+| | |____example-script-template.sh
