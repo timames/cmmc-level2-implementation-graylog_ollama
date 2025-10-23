@@ -174,7 +174,7 @@ The primary resource is a comprehensive HTML documentation file:
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/cmmc-level2-implementation-graylog_ollama.git
+git clone https://github.com/timames/cmmc-level2-implementation-graylog_ollama.git
 cd cmmc-level2-implementation-graylog_ollama
 
 # Open the guide in your browser
