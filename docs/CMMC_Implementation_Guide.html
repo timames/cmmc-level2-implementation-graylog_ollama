@@ -908,7 +908,7 @@
                     <div style="background: white; border-radius: 0.5rem; padding: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
                         <h4 style="font-weight: bold; margin-bottom: 0.5rem;">Log Sources Integrated</h4>
                         <ul style="font-size: 0.875rem; line-height: 1.5;">
-                            <li>Network (NetFlow from UDM-Pro)</li>
+                            <li>Network (NetFlow from GW/FW)</li>
                             <li>Firewalls, Switches, APs (Syslog)</li>
                             <li>Omnissa Horizon (VDI Sessions)</li>
                             <li>Omnissa UAG (Remote Access)</li>
@@ -4846,7 +4846,7 @@
                 <ul class="step-list">
                     <li>Install Graylog server: MongoDB + OpenSearch + Graylog (Docker Compose)</li>
                     <li>Configure inputs: Syslog (UDP/TCP 514), NetFlow (UDP 2055), GELF (UDP 12201)</li>
-                    <li>Configure ISE-Honolulu (UDM-Pro Max) NetFlow v9 export to Graylog</li>
+                    <li>Configure GW/FW NetFlow v9 export to Graylog</li>
                     <li>Add all network devices (firewalls, switches, APs) as syslog sources</li>
                     <li>Set retention: 90 days hot, 2+ years archive for CMMC</li>
                     <li>Storage: 1TB+ NVMe for hot data, NAS/S3 for archive</li>
@@ -4856,7 +4856,7 @@
             <div class="step-card">
                 <div class="step-header">
                     <div class="step-number">2</div>
-                    <div class="step-title">Configure UDM-Pro NetFlow + Omnissa VDI Logging</div>
+                    <div class="step-title">Configure NetFlow + Omnissa VDI Logging</div>
                 </div>
                 <ul class="step-list">
                     <li>UniFi Console > Settings > System > Advanced > NetFlow</li>
@@ -6159,7 +6159,7 @@ networks:
 # ============================================
 # NETFLOW INPUT CONFIGURATION
 # ============================================
-# Title: UDM-Pro NetFlow
+# Title: GW-FW Netflow
 # Type: NetFlow UDP
 # Port: 2055
 # Bind address: 0.0.0.0
