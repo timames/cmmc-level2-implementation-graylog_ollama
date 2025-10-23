@@ -262,13 +262,25 @@
             background: white;
             border-radius: 0.5rem 0.5rem 0 0;
             width: 100%;
+            max-width: 100%;
             box-sizing: border-box;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            border: 1px solid #e5e7eb;
+            border-bottom: 2px solid #e5e7eb;
         }
         
         .tabs-wrapper {
             width: 100%;
+            max-width: 100%;
             box-sizing: border-box;
             margin-bottom: 1.5rem;
+            overflow: hidden;
+        }
+        
+        .tab-contents-wrapper {
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
         }
         
         .tab {
@@ -303,6 +315,11 @@
             border-radius: 0 0 0.5rem 0.5rem;
             overflow-x: auto;
             box-sizing: border-box;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            border: 1px solid #e5e7eb;
+            border-top: none;
+            width: 100%;
+            max-width: 100%;
         }
         
         .tab-content > * {
@@ -877,6 +894,8 @@
 
 
         </div>
+        
+        <div class="tab-contents-wrapper">
 
         <div id="overview" class="tab-content active">
             <div class="info-box info-green">
@@ -7598,7 +7617,7 @@ sudo sysctl -a | grep -E "net.ipv4|kernel"</div>
                         <p style="font-size: 2rem; font-weight: bold; color: #2563eb; margin: 0.5rem 0;">~120 KB</p>
                         <p style="font-size: 0.8125rem; color: #6b7280; margin-bottom: 1rem;">All scripts + documentation</p>
                         <p style="font-size: 0.875rem; font-weight: 600; color: #059669; margin-bottom: 0.5rem;">
-                            💾 Scripts available in the Git repository.
+                            💾 Scripts available in the implementation package
                         </p>
                         <p style="font-size: 0.8125rem; color: #6b7280;">
                             Contact your CMMC implementation team for access to the complete hardening scripts package.
@@ -9310,7 +9329,7 @@ end</div>
             <div class="info-box" style="background: linear-gradient(135deg, #faf5ff 0%, #eff6ff 100%); border: 2px solid #9333ea; margin-top: 1.5rem;">
                 <h4 style="font-weight: bold; margin-bottom: 0.75rem; color: #6b21a8;">💡 Pro Tips for CMMC Assessment Preparation</h4>
                 <ol style="font-size: 0.875rem; line-height: 2; margin-left: 1.5rem;">
-                    <li><strong>Start Early:</strong> Begin policy development 12-24 months before planned assessment, if possible</li>
+                    <li><strong>Start Early:</strong> Begin policy development 6-12 months before planned assessment</li>
                     <li><strong>Document Everything:</strong> Maintain evidence of all security controls and activities</li>
                     <li><strong>Be Consistent:</strong> Ensure policies, procedures, and actual implementation align</li>
                     <li><strong>Practice Makes Perfect:</strong> Conduct internal assessments before C3PAO audit</li>
@@ -9990,6 +10009,8 @@ CUI-Plan-of-Action-Template-final.docx
 
         </div>
 
+        </div>
+        
         </div>
 
     </div>
